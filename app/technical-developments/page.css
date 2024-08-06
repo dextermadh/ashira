@@ -1,0 +1,11 @@
+.page-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.font3 {
+    font-size: 150px;
+    letter-spacing: -0.02em; 
+    color: black;
+}

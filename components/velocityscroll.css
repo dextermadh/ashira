@@ -1,0 +1,13 @@
+/* Media queries for mobile devices */
+@media (max-width: 768px) { 
+    .text {
+        font-size: 100px;
+    }
+
+    .image {
+        width: 250px;
+        overflow: visible;
+        height: 100px;
+    }
+
+}

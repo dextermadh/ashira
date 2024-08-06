@@ -1,0 +1,50 @@
+.page-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collaborate {
+
+}
+
+.font2 {
+    font-size: 300px;
+    letter-spacing: -0.02em; 
+    color: black;
+}
+
+.container {
+}
+
+
+@media (max-width: 1200px) { 
+    .font2 {
+      font-size: 100px;
+    }
+
+    .BcardContainer {
+        width: 70vw;
+        height: 25vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+    .imagecollaborate {
+        width: 85vw;
+        height: 20vh;
+        margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) { 
+
+    .font2 {
+      font-size: 70px;
+      letter-spacing: -0.02em; /* Reduced letter-spacing *//* Adjusted line-height for spacing */
+      color: #000;
+    }
+    
+  }

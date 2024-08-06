@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+	font-family: BebasNue;
+	src: url('../public/fonts/BebasNeue-Regular.ttf');
+}
+
+@font-face {
+  font-family: BD;
+  src: url('../public/assets/font/Brittaney-Memories-BF6452bc32382bc.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Monte;
+  src: url('../public/fonts/Montserrat-Italic-VariableFont_wght.ttf');
+}
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-family: "BebasNue";
+}
+
+body {
+  font-family: "BebasNue";
+  background: linear-gradient(135deg, #d0eaff, #edf5ff);
+
+}
+
+a, p {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.page-content {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  padding: 6em 2em;
+}
+
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.font1 {
+  font-size: 250px;
+}
+
+.fontHero {
+  font-size: 100px;
+}
+
+.velocityScroll {
+  font-size: 100px;
+}
+
+
+
+
+
+
+

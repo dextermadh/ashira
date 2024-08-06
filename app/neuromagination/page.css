@@ -1,0 +1,90 @@
+@import "../../../ashira/node_modules/locomotive-scroll/dist/locomotive-scroll.css";
+
+body{
+  margin: 0px;
+}
+
+.page-contentNeuro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20vh;
+}
+.containerNeuro {
+  margin-top: -20vh;
+  margin-bottom: 20vh;
+  
+}
+
+
+.NeuroFont {
+  font-size: 200px;
+  letter-spacing: -0.02em; /* Reduced letter-spacing *//* Adjusted line-height for spacing */
+  color: #000;
+}
+
+.card {
+  background-image: url(../../public/assets/Neuromagination/8V8A6486.JPG);
+  background-size: cover;
+}
+
+.card::before{
+  background-image: url(../../public/assets/Neuromagination/8V8A6481.JPG);
+}
+
+.card:hover {
+  background-image: url(../../public/assets/Neuromagination/8V8A6481.JPG);
+}
+
+.card2 {
+  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(45\).jpg);
+  background-size: cover;
+}
+
+.card2::before{
+  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(44\).JPG);
+}
+
+.card2:hover {
+  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(44\).JPG);
+}
+
+.card3 {
+  background-image: url(../../public/assets/Neuromagination/8V8A6198.JPG);
+  background-size: cover;
+}
+
+.card3::before{
+  background-image: url(../../public/assets/Neuromagination/8V8A6206.JPG);
+}
+
+.card3:hover {
+  background-image: url(../../public/assets/Neuromagination/8V8A6206.JPG);
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .NeuroFont {
+    font-size: 60px;
+  }
+  .page-contentNeuro{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30vh;
+    margin-bottom: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .NeuroFont {
+    font-size: 60px;
+  }
+  .page-contentNeuro{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30vh;
+    margin-bottom: 50vh;
+  }
+}
