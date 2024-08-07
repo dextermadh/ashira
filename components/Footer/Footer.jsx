@@ -37,7 +37,7 @@ export default function Footer() {
                     </div>
                     <motion.div style={{x}} className={styles.buttonContainer}>
                         <Link href="/collaborate">
-                        <Rounded  backgroundColor={"#f6f1eb"} className={styles.button}>
+                        <Rounded  backgroundColor={"#cdae89"} className={styles.button}>
                             <p>Get in touch</p>
                         </Rounded>
                         </Link>
@@ -48,28 +48,28 @@ export default function Footer() {
                 </div>
                 <div className={styles.nav}>
                         <Rounded>
-                            <p>ashira0068@gmail.com</p>
+                            <p>eesamo.designs@gmail.com</p>
                         </Rounded>
                         <Rounded>
                             <p>+94761222577</p>
                         </Rounded>
                 </div>
                 <div className={styles.info}>
-                    <div>
-                        <span>
-                            <p>2024 © All Rights Reserved</p>
-                        </span>
+                <div>
+                        <Magnetic>
+                            <a href='https://www.instagram.com/ashiras_journal_/' target='_blank'>Instagram</a>
+                        </Magnetic>
+                        <Magnetic>
+                            <a href='https://www.behance.net/omasheefernando10' target='_blank'>Behance</a>
+                        </Magnetic>
+                        <Magnetic>
+                            <a href='http://www.linkedin.com/in/ashirafernando' target='_blank'>Linkedin</a>
+                        </Magnetic>
                     </div>
                     <div>
-                        <Magnetic>
-                            <p>Instagram</p>
-                        </Magnetic>
-                        <Magnetic>
-                            <p>Behance</p>
-                        </Magnetic>
-                        <Magnetic>
-                            <p>Linkedin</p>
-                        </Magnetic>
+                        <span>
+                            <p className='rights'>2024 © All Rights Reserved</p>
+                        </span>
                     </div>
                 </div>
             </div>

@@ -27,3 +27,16 @@
         }
     }
 }
+
+@media (max-width: 768px) { 
+    .gallery {
+        .vignette{ 
+            
+            img {
+                width: 500px;
+            }
+
+    }
+
+} 
+}

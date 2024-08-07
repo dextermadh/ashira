@@ -19,67 +19,55 @@ body{
 
 
 .NeuroFont {
-  font-size: 200px;
+  font-size: 220px;
   letter-spacing: -0.02em; /* Reduced letter-spacing *//* Adjusted line-height for spacing */
   color: #000;
 }
 
 .card {
-  background-image: url(../../public/assets/Neuromagination/8V8A6486.JPG);
+  background-image: url(../../public/assets/Neuromagination/8V8A6486.jpg);
   background-size: cover;
 }
 
 .card::before{
-  background-image: url(../../public/assets/Neuromagination/8V8A6481.JPG);
+  background-image: url(../../public/assets/Neuromagination/8V8A6481.jpg);
 }
 
 .card:hover {
-  background-image: url(../../public/assets/Neuromagination/8V8A6481.JPG);
+  background-image: url(../../public/assets/Neuromagination/8V8A6481.jpg);
 }
 
-.card2 {
+.cardN2 {
   background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(45\).jpg);
   background-size: cover;
 }
 
-.card2::before{
-  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(44\).JPG);
+.cardN2::before{
+  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(44\).jpg);
 }
 
-.card2:hover {
-  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(44\).JPG);
+.cardN2:hover {
+  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(44\).jpg);
 }
 
-.card3 {
-  background-image: url(../../public/assets/Neuromagination/8V8A6198.JPG);
+.cardN3 {
+  background-image: url(../../public/assets/Neuromagination/8V8A6198.jpg);
   background-size: cover;
 }
 
-.card3::before{
-  background-image: url(../../public/assets/Neuromagination/8V8A6206.JPG);
+.cardN3::before{
+  background-image: url(../../public/assets/Neuromagination/8V8A6206.jpg);
 }
 
-.card3:hover {
-  background-image: url(../../public/assets/Neuromagination/8V8A6206.JPG);
+.cardN3:hover {
+  background-image: url(../../public/assets/Neuromagination/8V8A6206.jpg);
 }
 
 
 /* Mobile Styles */
 @media (max-width: 768px) {
   .NeuroFont {
-    font-size: 60px;
-  }
-  .page-contentNeuro{
-    display: flex;
-    flex-direction: column;
-    margin-top: 30vh;
-    margin-bottom: 50vh;
-  }
-}
-
-@media (max-width: 480px) {
-  .NeuroFont {
-    font-size: 60px;
+    font-size: 55px;
   }
   .page-contentNeuro{
     display: flex;

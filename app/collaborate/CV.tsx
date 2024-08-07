@@ -27,10 +27,12 @@ export function CV() {
       <PinContainer
         title="Download CV" className="container"
       >
-        <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[70rem] h-[50rem] BcardContainer"             >
+        <div className="BcardContainer">
+        <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[65rem] h-[40rem] "             >
           <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br items-center" >
-            <Image  src={image}  className="rounded-lg  imagecollaborate"/>
+            <Image src={image}  className="rounded-lg  imagecollaborate" alt=""/>
           </div>
+        </div>
         </div>
       </PinContainer>
       </div>

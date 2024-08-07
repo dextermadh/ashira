@@ -95,16 +95,7 @@ const projects = [
     handle1: image12,
     handle2: image13
   },
-  {
-    name: "Mark Rammers",
-    handle1: image13,
-    handle2: image14
-  },
-  {
-    name: "Leidinger Matthias",
-    handle1: image14,
-    handle2: image15
-  },
+
   {
     name: "Mark Rammers",
     handle1: image15,

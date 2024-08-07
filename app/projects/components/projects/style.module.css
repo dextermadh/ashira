@@ -39,15 +39,16 @@
 
 
 /* Media Queries for Tablets and Smaller Screens */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .project {
         flex-direction: column; /* Stack items vertically on tablets */
         padding: 30px 20px; /* Adjust padding for tablets */
     }
 
     .project h2 {
-        font-size: 5vw; /* Adjust font size for tablets */
-        text-align: center; /* Center-align text on tablets */
+        font-size: 7vw; /* Adjust font size for tablets */
+        text-align: center;
+        margin-bottom: 30px; /* Center-align text on tablets */
     }
 
     .project p {
@@ -57,7 +58,7 @@
 }
 
 /* Media Queries for Mobile Screens */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .project {
         padding: 20px 10px; /* Adjust padding for mobile screens */
     }

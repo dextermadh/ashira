@@ -17,6 +17,12 @@ const images = [
     '/assets/Neuromagination/6.jpg',
     '/assets/Neuromagination/7.jpg',
     '/assets/Neuromagination/8.jpg',
+    '/assets/Neuromagination/9.jpg',
+    '/assets/Neuromagination/10.jpg',
+    '/assets/Neuromagination/11.jpg',
+    '/assets/Neuromagination/12.jpg',
+    '/assets/Neuromagination/13.jpg',
+    '/assets/Neuromagination/14.jpg',
 
     // Add other images manually
   ];

@@ -101,7 +101,7 @@ const Menu = () => {
               <a href="#">Behance &#8599;</a>
             </div>
             <div className="menu-info-col">
-              <p>ashira0068@gmail.com</p>
+              <p>eesamo.designs@gmail.com</p>
               <p>+94761222577</p>
             </div>
           </div>

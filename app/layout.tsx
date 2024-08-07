@@ -4,7 +4,7 @@ import "./globals.css";
 import Menu from "@/components/Menu/Menu";
 import Head from "next/head";
 import Footer from "@/components/Footer/Footer";
-
+import {ScrollToTopButton} from "../components/scrolltotop"
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,11 +20,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en">     
       <body className={inter.className}>
         <Menu />
         {children}
         <Footer />
+        <ScrollToTopButton />
         </body>
     </html>
   );

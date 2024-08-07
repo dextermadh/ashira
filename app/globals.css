@@ -16,8 +16,14 @@
 }
 
 @font-face {
+  font-family: MonteLight;
+  src: url('../public/fonts/Montserrat-Light.ttf');
+}
+
+
+@font-face {
   font-family: Monte;
-  src: url('../public/fonts/Montserrat-Italic-VariableFont_wght.ttf');
+  src: url('../public/fonts/Montserrat-VariableFont_wght.ttf');
 }
 
 
@@ -45,12 +51,12 @@
 
 body {
   font-family: "BebasNue";
-  background: linear-gradient(135deg, #d0eaff, #edf5ff);
+  background: rgb(242, 237, 229);
 
 }
 
 a, p {
-  color: #000;
+  color: rgb(70, 69, 69);
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
@@ -84,7 +90,28 @@ a, p {
   font-size: 100px;
 }
 
+/* ScrolltoTopButton */
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+}
+
+.btn-scroll-top {
+  background-color: rgb(236, 216, 184);
+  border: none;
+  border-radius: 50%;
+  padding:15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-scroll-top:hover {
+  background-color: rgb(218, 198, 170);
+}
 
 
 

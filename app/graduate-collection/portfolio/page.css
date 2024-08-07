@@ -36,7 +36,7 @@ body,
 }
 
 .fontPortfolio {
-  font-size: 100px;
+  font-size: 120px;
   letter-spacing: -0.02em; /* Reduced letter-spacing *//* Adjusted line-height for spacing */
   color: #000;
 }
@@ -191,9 +191,16 @@ body,
   .next-button {
     right: 20px;
   }
+
+  .des {
+    margin-top: -40vh;
+  }
+
+
+
   
   /* Media Queries for Mobile Responsiveness */
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .page-content {
       grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
       gap: 8px; /* Reduce gap between images */
@@ -216,20 +223,5 @@ body,
       color: #000;
     }
   }
-  
-  @media (max-width: 400px) {
-    .full-screen-image-wrapper {
-      padding: 5px;
-    }
-  
-    .nav-button {
-      font-size: 16px;
-      padding: 5px;
-    }
-    .fontPortfolio {
-      font-size: 25px;
-      letter-spacing: -0.02em; /* Reduced letter-spacing *//* Adjusted line-height for spacing */
-      color: #000;
-    }
-  }
+
   

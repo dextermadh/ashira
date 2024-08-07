@@ -13,6 +13,7 @@
         position: relative;
         z-index: 1;
         transition: color 0.4s linear;
+        font-size: 30px;
     }
 
     &:hover{
@@ -28,5 +29,6 @@
     position: absolute;
     border-radius: 50%;
     top: 100%;
-    background: linear-gradient(135deg, #d0eaff, #b3d7ff);
+    
 }
+

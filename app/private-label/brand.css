@@ -13,6 +13,9 @@
 .BackgroundImg {
     object-fit: cover;
 }
+.BackgroundImg1 {
+    object-fit: cover;
+}
 
 /* brand */
 
@@ -23,22 +26,22 @@
 }
 
 .DesText {
-    padding: 0 80px;
-    font-size: 50px;
-    font-family:"Monte";
+    padding: 0 190px;
+    font-size: 30px;
+    font-family: "MonteLight";
     text-transform: capitalize;
     margin: 20px;
 }
 .DesText1 {
-    padding: 0 80px;
-    font-size: 50px;
-    font-family: "Monte";
+    padding: 0 190px;
+    font-size: 30px;
+    font-family: "MonteLight";
     text-transform: capitalize;
     margin: 20px;
 }
 
 /* General Mobile Styles */
-@media (max-width: 767px) {
+@media (max-width: 480px) {
 
     .font3 {
         font-size: 70px;
@@ -54,17 +57,21 @@
         width: 100px;
         object-fit: none;
     }
+    .BackgroundImg1 {
+        width: 500px;
+        object-fit: none;
+    }
 
     .DesText {
         padding: 0 20px;
-        font-size: 30px;
+        font-size: 20px;
         margin-top: -10vh;
         margin-bottom: -10vh;
     }
     .DesText1 {
-        margin-top: -10vh;
+        margin-top: -8vh;
         padding: 0 20px;
-        font-size: 30px;
+        font-size: 20px;
         margin-bottom: -10vh;
     }
 }

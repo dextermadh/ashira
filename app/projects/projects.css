@@ -10,13 +10,7 @@
     color: #000;
 }
 
-/* Adjust font-size for smaller screens */
-@media (max-width: 768px) {
-    .fontProject {
-      font-size: 100px; /* Smaller font-size for mobile screens */
-    }
-  }
-  
+
 
 .modalContainer{
     height: 350px;
@@ -108,7 +102,12 @@
 }
 
 /* Adjustments for mobile screens */
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
+
+    .fontProject {
+        font-size: 120px; /* Smaller font-size for mobile screens */
+      }
+    
 
     .projectMain {
         margin-top: -40vh;
