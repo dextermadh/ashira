@@ -18,7 +18,7 @@ const menuLinks = [
 const Menu: React.FC = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const tl = useRef<gsap.Timeline | undefined>(undefined); // Type ref as gsap.Timeline or undefined
+  const tl = useRef<gsap.core.Timeline | null>(null); // Update type to gsap.core.Timeline
 
   // Toggle the menu open/close state
   const toggleMenu = () => {
