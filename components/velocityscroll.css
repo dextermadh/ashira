@@ -1,5 +1,9 @@
 /* Media queries for mobile devices */
 @media (max-width: 768px) { 
+    .containerV {
+        margin-top: -60vh;
+    }
+
     .text {
         font-size: 100px;
     }
