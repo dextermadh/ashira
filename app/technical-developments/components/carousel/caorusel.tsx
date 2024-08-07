@@ -17,11 +17,21 @@ const images = [
   '/assets/Website Required Content/PROJECTS/CADS for portfolio/2nd folder CASUAL WEAR/Corset Top/3.jpg',
   '/assets/Website Required Content/PROJECTS/CADS for portfolio/2nd folder CASUAL WEAR/Corset Top/5.jpg',
   '/assets/Website Required Content/PROJECTS/CADS for portfolio/2nd folder CASUAL WEAR/Corset Top/6.jpg',
-  '/assets/Website Required Content/PROJECTS/CADS for portfolio/2nd folder CASUAL WEAR/T-shirt/1.jpg',
-  '/assets/Website Required Content/PROJECTS/CADS for portfolio/2nd folder CASUAL WEAR/T-shirt/2.jpg',
-  '/assets/Website Required Content/PROJECTS/CADS for portfolio/2nd folder CASUAL WEAR/T-shirt/3.jpg',
-  '/assets/Website Required Content/PROJECTS/CADS for portfolio/2nd folder CASUAL WEAR/T-shirt/4.jpg',
-  '/assets/Website Required Content/PROJECTS/CADS for portfolio/2nd folder CASUAL WEAR/T-shirt/5.jpg',
+  '/assets/Website Required Content/PROJECTS/CADS for portfolio/2nd folder CASUAL WEAR/T- shirt/1.jpg',
+  '/assets/Website Required Content/PROJECTS/CADS for portfolio/2nd folder CASUAL WEAR/T- shirt/2.jpg',
+  '/assets/Website Required Content/PROJECTS/CADS for portfolio/2nd folder CASUAL WEAR/T- shirt/3.jpg',
+  '/assets/Website Required Content/PROJECTS/CADS for portfolio/2nd folder CASUAL WEAR/T- shirt/4.jpg',
+  '/assets/Website Required Content/PROJECTS/CADS for portfolio/2nd folder CASUAL WEAR/T- shirt/5.jpg',
+  '/assets/Website Required Content/PROJECTS/CADS for portfolio/SPORTSWEAR/Legging/1.jpg',
+  '/assets/Website Required Content/PROJECTS/CADS for portfolio/SPORTSWEAR/Legging/2.jpg',
+  '/assets/Website Required Content/PROJECTS/CADS for portfolio/SPORTSWEAR/Legging/3.jpg',
+  '/assets/Website Required Content/PROJECTS/CADS for portfolio/SPORTSWEAR/Legging/4.jpg',
+  '/assets/Website Required Content/PROJECTS/CADS for portfolio/SPORTSWEAR/Legging/5.jpg',
+  '/assets/Website Required Content/PROJECTS/CADS for portfolio/SPORTSWEAR/Swimwear/1.jpg',
+  '/assets/Website Required Content/PROJECTS/CADS for portfolio/SPORTSWEAR/Swimwear/2.jpg',
+  '/assets/Website Required Content/PROJECTS/CADS for portfolio/SPORTSWEAR/Swimwear/3.jpg',
+  '/assets/Website Required Content/PROJECTS/CADS for portfolio/SPORTSWEAR/Swimwear/4.jpg',
+
   // Add other images manually
 ];
 
