@@ -31,11 +31,11 @@ body{
 }
 
 .card::before{
-  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(21\).JPG);
+  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(21\).jpg);
 }
 
 .card:hover {
-  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(21\).JPG);
+  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(21\).jpg);
 }
 
 .card2 {
@@ -44,11 +44,11 @@ body{
 }
 
 .card2::before{
-  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(44\).JPG);
+  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(44\).jpg);
 }
 
 .card2:hover {
-  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(44\).JPG);
+  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(44\).jpg);
 }
 
 .card3 {
@@ -57,11 +57,11 @@ body{
 }
 
 .card3::before{
-  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(56\).JPG);
+  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(56\).jpg);
 }
 
 .card3:hover {
-  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(56\).JPG);
+  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(56\).jpg);
 }
 
 
