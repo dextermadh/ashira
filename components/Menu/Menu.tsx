@@ -98,7 +98,7 @@ const Menu = () => {
             <div className="menu-info-col">
               <a href="https://www.instagram.com/ashiras_journal_/" target="_blank">Instagram &#8599;</a>
               <a href="http://www.linkedin.com/in/ashirafernando"  target="_blank">LinkedIn &#8599;</a>
-              <a href="#">Behance &#8599;</a>
+              <a href="https://www.behance.net/omasheefernando10" target="_blank">Behance &#8599;</a>
             </div>
             <div className="menu-info-col">
               <p>eesamo.designs@gmail.com</p>

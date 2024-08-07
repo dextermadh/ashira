@@ -11,13 +11,7 @@ import Link from 'next/link';
 import { GradualSpacingDemo11, IntroNeuromagination } from './components/GradualSpacing';
 
 export default function Home() {
-  useEffect(() => {
-    // Initialize LocomotiveScroll without async/await
-    import('locomotive-scroll').then((module) => {
-      const LocomotiveScroll = module.default;
-      new LocomotiveScroll();
-    }).catch((error) => console.error('Error loading LocomotiveScroll:', error));
-  }, []);
+  
 
   return (
     <div className=''>
