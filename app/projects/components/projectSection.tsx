@@ -1,8 +1,8 @@
 'use client';
 import styles from "./page.module.css"
 import { useState } from 'react';
-import Project from './projects/project';
 import Modal from './modal/modal';
+import ProjectLink from "./projects/project";
 
 const projects = [
   {
@@ -28,7 +28,7 @@ export default function ProjectSection() {
     <div className={styles.body}>
       {
         projects.map( (project, index) => {
-          return <Project index={index} title={project.title} link={project.link} setModal={setModal} key={index}/>
+          return <ProjectLink index={index} title={project.title} link={project.link} setModal={setModal} key={index}/>
         })
       }
     </div>
