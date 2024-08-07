@@ -25,11 +25,11 @@ const images = [
   // Add other images manually
 ];
 
-interface Carousel2Props {
+interface CarouselProps {
   name: string;
 }
 
-export const Carousel2: FC<Carousel2Props> = ({ name }) => {
+export const Carousel2: FC<CarouselProps> = ({ name }) => {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [galleryContainer, setGalleryContainer] = useState<null | string>(null);
 

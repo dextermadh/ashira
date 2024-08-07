@@ -174,47 +174,55 @@ const projects = [
 ]
 
 export default function Home() {
-
   const spring = {
     stiffness: 150,
     damping: 15,
     mass: 0.1
-  }
+  };
 
   const mousePosition = {
     x: useSpring(0, spring),
     y: useSpring(0, spring)
-  }
+  };
 
-  useEffect( () => {
-    const lenis = new Lenis()
+  useEffect(() => {
+    // Initialize Lenis with configuration
+    const lenis = new Lenis({
+      duration: 1.2, // Duration of the smooth scrolling
+      easing: (t: number) => t // Linear easing function for smooth scrolling
+    });
 
-    function raf(time) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-    }
-    
-    requestAnimationFrame(raf)
-  }, [])
+    // Animation frame update
+    const raf = (time: number) => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
 
-  const mouseMove = (e) => {
+    // Start animation frame loop
+    const animationFrameId = requestAnimationFrame(raf);
+
+    // Cleanup on component unmount
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, []);
+
+  const mouseMove = (e: React.MouseEvent) => {
     const { clientX, clientY } = e;
     const targetX = clientX - (window.innerWidth / 2 * 0.25);
     const targetY = clientY - (window.innerWidth / 2 * 0.30);
     mousePosition.x.set(targetX);
     mousePosition.y.set(targetY);
-  }
+  };
 
   return (
-    <div className="">
-    <IntroGraduateCollectionGallery />
-    <main onMouseMove={mouseMove}>
-      {
-        projects.map( ({handle1,handle2}, i) => {
-          return <Gallery mousePosition={mousePosition} handle1={handle1} handle2={handle2} key={i}/>
-        })
-      }
-    </main>
+    <div className="page-container">
+      <IntroGraduateCollectionGallery />
+      <main onMouseMove={mouseMove}>
+        {projects.map(({ handle1, handle2 }, i) => (
+          <Gallery mousePosition={mousePosition} handle1={handle1} handle2={handle2} key={i} />
+        ))}
+      </main>
     </div>
-  )
+  );
 }

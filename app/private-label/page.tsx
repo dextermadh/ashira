@@ -11,18 +11,25 @@ import {
 
 const Page = () => {
   useEffect(() => {
-    const lenis = new Lenis();
+    // Initialize Lenis for smooth scrolling
+    const lenis = new Lenis({
+      duration: 1.2, // Duration for smooth scrolling
+      easing: (t) => t, // Easing function for smooth transitions
+    });
 
+    // Animation frame update function
     const raf = (time: number) => {
       lenis.raf(time);
       requestAnimationFrame(raf);
     };
 
+    // Start animation frame loop
     requestAnimationFrame(raf);
 
     // Cleanup function to remove Lenis instance when component unmounts
     return () => {
-      // Add any necessary cleanup here if needed
+      // No specific cleanup needed for Lenis, but keeping the return for best practices
+      lenis.destroy();
     };
   }, []);
 

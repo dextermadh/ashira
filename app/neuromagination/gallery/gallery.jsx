@@ -13,6 +13,7 @@ export default function Gallery({mousePosition, handle1, handle2}) {
                 src={handle1}
                 alt="image"
                 fill
+                priority
             />
         </div>
         <motion.div
@@ -23,6 +24,7 @@ export default function Gallery({mousePosition, handle1, handle2}) {
             src={handle2}
             alt="image"
             fill
+            priority
           />
         </motion.div>
     </div>
