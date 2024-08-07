@@ -1,9 +1,9 @@
 'use client';
 import { useEffect } from 'react';
 import './page.css'
-import { CardDemo } from './components/Card';
-import { CardDemo2 } from './components/Card2';
-import { CardDemo3 } from './components/Card3';
+import { GCardDemo } from './components/GCard';
+import { GCardDemo2 } from './components/GCard2';
+import { GCardDemo3 } from './components/GCard3';
 import Link from 'next/link';
 import { GradualSpacingDemo10, IntroGraduateCollection } from './components/GradualSpacing';
 
@@ -18,13 +18,13 @@ export default function Home() {
           <div className="page-content">
           <div className="container1">
             <Link href="graduate-collection/portfolio">
-          <CardDemo />
+          <GCardDemo />
           </Link>
           <Link href="graduate-collection/look-book">
-          <CardDemo2 />
+          <GCardDemo2 />
           </Link>
           <Link href="graduate-collection/gallery">
-          <CardDemo3 />
+          <GCardDemo3 />
           </Link> 
             </div>
           </div>

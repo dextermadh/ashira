@@ -2,7 +2,7 @@
 import { cn } from "@/lib/util";
 import image from "../../../public/assets/FASHION_SHOOT_3/p (25).jpg"
 
-export function CardDemo() {
+export function NCardDemo() {
   return (
     <div className="max-w-xs w-full ">
       <div

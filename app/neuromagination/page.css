@@ -23,18 +23,6 @@ body{
   color: #000;
 }
 
-.card {
-  background-image: url(../../public/assets/Neuromagination/8V8A6486.jpg);
-  background-size: cover;
-}
-
-.card::before{
-  background-image: url(../../public/assets/Neuromagination/8V8A6481.jpg);
-}
-
-.card:hover {
-  background-image: url(../../public/assets/Neuromagination/8V8A6481.jpg);
-}
 
 .cardN2 {
   background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(45\).jpg);
@@ -72,6 +60,6 @@ body{
     display: flex;
     flex-direction: column;
     margin-top: 30vh;
-    margin-bottom: 50vh;
+    margin-bottom: 70vh;
   }
 }
