@@ -1,55 +1,68 @@
 'use client';
 
-import React, { useState, useRef, useEffect } from 'react';
-import Link from 'next/link';
-import './menu.css';
-import { gsap, TimelineMax } from 'gsap';
+import React, { useState, useRef, useEffect } from "react";
+import Link from "next/link";
+import "./menu.css";
+import { gsap } from "gsap";
 
+// Define the menu links
 const menuLinks = [
-  { path: '/', label: 'Home' },
-  { path: '/collaborate', label: 'Collaborate' },
-  { path: '/projects', label: 'Projects' },
-  { path: '/technical-developments', label: 'Technical Developments' },
-  { path: '/private-label', label: 'Private Label' },
-  { path: '/about', label: 'About Me' },
+  { path: "/", label: "Home" },
+  { path: "/collaborate", label: "Collaborate" },
+  { path: "/projects", label: "Projects" },
+  { path: "/technical-developments", label: "Technical Developments" },
+  { path: "/private-label", label: "Private Label" },
+  { path: "/about", label: "About Me" },
 ];
 
 const Menu: React.FC = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-  const tl = useRef<TimelineMax | null>(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const tl = useRef<gsap.Timeline | undefined>(undefined); // Type ref as gsap.Timeline or undefined
 
+  // Toggle the menu open/close state
   const toggleMenu = () => {
-    setIsMenuOpen(prevState => !prevState);
+    console.log("Menu toggled. Current state:", isMenuOpen);
+    setIsMenuOpen((prevState) => !prevState);
   };
 
   useEffect(() => {
-    if (!containerRef.current) return;
+    console.log("Setting up GSAP animations");
 
-    gsap.set('.menu-link-item-holder', { y: 75 });
+    // Set initial position for menu link items
+    gsap.set(".menu-link-item-holder", { y: 75 });
 
+    // Create GSAP timeline
     tl.current = gsap.timeline({ paused: true })
-      .to('.menu-overlay', {
+      .to(".menu-overlay", {
         duration: 1.25,
-        clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-        ease: 'power4.inOut',
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        ease: "power4.inOut",
       })
-      .to('.menu-link-item-holder', {
-        y: 0,
-        duration: 1,
-        stagger: 0.1,
-        ease: 'power4.inOut',
-        delay: -0.75,
-      });
+      .to(
+        ".menu-link-item-holder",
+        {
+          y: 0,
+          duration: 1,
+          stagger: 0.1,
+          ease: "power4.inOut",
+          delay: -0.75,
+        }
+      );
 
-    return () => {
-      tl.current?.kill();
-    };
+    console.log("GSAP timeline created:", tl.current);
   }, []);
 
   useEffect(() => {
+    console.log("isMenuOpen state changed:", isMenuOpen);
     if (tl.current) {
-      isMenuOpen ? tl.current.play() : tl.current.reverse();
+      if (isMenuOpen) {
+        tl.current.play();
+        console.log("Playing timeline");
+      } else {
+        tl.current.reverse();
+        console.log("Reversing timeline");
+      }
     }
   }, [isMenuOpen]);
 
@@ -57,16 +70,16 @@ const Menu: React.FC = () => {
     <div className="menu-container" ref={containerRef}>
       <div className="menu-bar">
         <div className="menu-logo">
-          <Link href="/">Ashira Fernando</Link>
+          <Link className="menu-logo1" href="/">Ashira Fernando</Link>
         </div>
         <div className="menu-open" onClick={toggleMenu}>
           <p>Menu</p>
         </div>
       </div>
-      <div className={`menu-overlay ${isMenuOpen ? 'open' : ''}`}>
+      <div className="menu-overlay">
         <div className="menu-overlay-bar">
           <div className="menu-logo">
-            <Link href="/">Ashira Fernando</Link>
+            <Link className="menu-logo1" href="/">Ashira Fernando</Link>
           </div>
           <div className="menu-close" onClick={toggleMenu}>
             <p>Close</p>

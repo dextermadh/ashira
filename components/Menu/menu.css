@@ -1,9 +1,4 @@
 
-@font-face {
-    font-family: BD;
-    src: url('../../public/fonts/Caveat-VariableFont_wght.ttf');
-    font-weight: 700;
-  }
   
 
 .menu-bar, 
@@ -21,7 +16,7 @@
 }
 
 .menu-logo {
-
+    font-size: 25px;
 }
 
 .menu-bar a,
@@ -44,7 +39,7 @@
     width: 100vw;
     height: 100vh;
     padding: 2em;
-    background: linear-gradient(135deg, #eff5fa, #ffffff);
+    background: white;
     z-index: 1000000;
     display: flex;
     clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
@@ -146,7 +141,9 @@
     .menu-close-icon {
         display: none;
     }
-    
+    .menu-logo1 {
+        font-size: 20px;
+    }
 
     .menu-copy {
         padding-top: 8em;
