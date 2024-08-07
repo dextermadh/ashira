@@ -8,7 +8,7 @@ import { CV } from "./CV";
 
 
 
-const page = () => {
+const Page = () => {
     return (
         <div className="">
             <IntroCollaborate />
@@ -20,4 +20,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

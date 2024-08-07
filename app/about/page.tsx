@@ -7,7 +7,7 @@ import Lenis from 'lenis'
 import { Description, Description1, Intro, Section, Section1 } from "./component/about";
 import { IntroAbout } from "./Components/GradualSpacing";
 
-const page = () => {
+const Page = () => {
 
     useEffect( () => {
         const lenis = new Lenis()
@@ -35,4 +35,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

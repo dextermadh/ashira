@@ -3,7 +3,7 @@ import { GradualSpacingDemo1, IntroProjects } from "./components/GradualSpacing"
 import '../projects/projects.css'
 import ProjectSection from "./components/projectSection";
 
-const page = () => {
+const Page = () => {
     return (
         <div className="">
            <IntroProjects />
@@ -16,4 +16,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

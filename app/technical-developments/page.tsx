@@ -4,7 +4,7 @@ import "./page.css";
 import { Carousel3 } from "./components/carousel/caorusel";
 
 
-const page = () => {
+const Page = () => {
     return (
         <div className="">
         <IntroTechnicalDevelopments />
@@ -15,4 +15,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;
