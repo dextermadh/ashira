@@ -24,16 +24,16 @@ body{
 }
 
 
-.cardN2 {
+.cardN {
   background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(45\).jpg);
   background-size: cover;
 }
 
-.cardN2::before{
+.cardN::before{
   background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(44\).jpg);
 }
 
-.cardN2:hover {
+.cardN:hover {
   background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(44\).jpg);
 }
 

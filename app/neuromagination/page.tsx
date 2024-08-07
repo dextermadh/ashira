@@ -2,8 +2,7 @@
 import { useEffect } from 'react';
 import './page.css';
 import Lenis from '@studio-freight/lenis';
-import { NCardDemo } from './components/Card';
-import { NCardDemo2 } from './components/NCard2';
+import { NCardDemo } from './components/NCard';
 import { NCardDemo3 } from './components/NCard3';
 import Link from 'next/link';
 import { GradualSpacingDemo11, IntroNeuromagination } from './components/GradualSpacing';
