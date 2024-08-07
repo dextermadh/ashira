@@ -6,59 +6,87 @@ import styles from './style.module.css';
 import Link from 'next/link';
 
 const scaleAnimation = {
-    initial: {scale: 0, x:"-50%", y:"-50%"},
-    enter: {scale: 1, x:"-50%", y:"-50%", transition: {duration: 0.4, ease: [0.76, 0, 0.24, 1]}},
-    closed: {scale: 0, x:"-50%", y:"-50%", transition: {duration: 0.4, ease: [0.32, 0, 0.67, 0]}}
+  initial: { scale: 0, x: "-50%", y: "-50%" },
+  enter: { scale: 1, x: "-50%", y: "-50%", transition: { duration: 0.4, ease: [0.76, 0, 0.24, 1] } },
+  closed: { scale: 0, x: "-50%", y: "-50%", transition: { duration: 0.4, ease: [0.32, 0, 0.67, 0] } }
 }
 
-export default function Index({modal, projects}) {
+interface Project {
+  src: string;
+  color: string;
+}
 
+interface IndexProps {
+  modal: {
+    active: boolean;
+    index: number;
+  };
+  projects: Project[];
+}
+
+export default function Index({ modal, projects }: IndexProps) {
   const { active, index } = modal;
-  const modalContainer = useRef(null);
-  const cursor = useRef(null);
-  const cursorLabel = useRef(null);
+  const modalContainer = useRef<HTMLDivElement | null>(null);
+  const cursor = useRef<HTMLDivElement | null>(null);
+  const cursorLabel = useRef<HTMLDivElement | null>(null);
 
-  useEffect( () => {
-    //Move Container
-    let xMoveContainer = gsap.quickTo(modalContainer.current, "left", {duration: 0.8, ease: "power3"})
-    let yMoveContainer = gsap.quickTo(modalContainer.current, "top", {duration: 0.8, ease: "power3"})
-    //Move cursor
-    let xMoveCursor = gsap.quickTo(cursor.current, "left", {duration: 0.5, ease: "power3"})
-    let yMoveCursor = gsap.quickTo(cursor.current, "top", {duration: 0.5, ease: "power3"})
-    //Move cursor label
-    let xMoveCursorLabel = gsap.quickTo(cursorLabel.current, "left", {duration: 0.45, ease: "power3"})
-    let yMoveCursorLabel = gsap.quickTo(cursorLabel.current, "top", {duration: 0.45, ease: "power3"})
+  useEffect(() => {
+    const moveContainer = gsap.quickTo(modalContainer.current, "left", { duration: 0.8, ease: "power3" });
+    const moveContainerY = gsap.quickTo(modalContainer.current, "top", { duration: 0.8, ease: "power3" });
+    const moveCursor = gsap.quickTo(cursor.current, "left", { duration: 0.5, ease: "power3" });
+    const moveCursorY = gsap.quickTo(cursor.current, "top", { duration: 0.5, ease: "power3" });
+    const moveCursorLabel = gsap.quickTo(cursorLabel.current, "left", { duration: 0.45, ease: "power3" });
+    const moveCursorLabelY = gsap.quickTo(cursorLabel.current, "top", { duration: 0.45, ease: "power3" });
 
-    window.addEventListener('mousemove', (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       const { pageX, pageY } = e;
-      xMoveContainer(pageX)
-      yMoveContainer(pageY)
-      xMoveCursor(pageX)
-      yMoveCursor(pageY)
-      xMoveCursorLabel(pageX)
-      yMoveCursorLabel(pageY)
-    })
-  }, [])
+      moveContainer(pageX);
+      moveContainerY(pageY);
+      moveCursor(pageX);
+      moveCursorY(pageY);
+      moveCursorLabel(pageX);
+      moveCursorLabelY(pageY);
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+
+    // Cleanup function to remove event listener
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
 
   return (
     <>
-        <motion.div ref={modalContainer} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className={styles.modalContainer}>
-            <div style={{top: index * -100 + "%"}} className={styles.modalSlider}>
-            {
-                projects.map( (project, index) => {
-                const { src, color } = project
-                return <div className={styles.modal} style={{backgroundColor: color}} key={`modal_${index}`}>
-                    <Image 
+      <motion.div
+        ref={modalContainer}
+        variants={scaleAnimation}
+        initial="initial"
+        animate={active ? "enter" : "closed"}
+        className={styles.modalContainer}
+      >
+        <div style={{ top: index * -100 + "%" }} className={styles.modalSlider}>
+          {
+            projects.map((project, idx) => {
+              const { src, color } = project;
+              return (
+                <div
+                  className={styles.modal}
+                  style={{ backgroundColor: color }}
+                  key={`modal_${idx}`}
+                >
+                  <Image 
                     src={src}
                     width={300}
-                    height={0}
-                    alt="image"
-                    />
+                    height={300} // Set a specific height for better layout control
+                    alt={`Project ${idx}`}
+                  />
                 </div>
-                })
-            }
-            </div>
-        </motion.div>
+              );
+            })
+          }
+        </div>
+      </motion.div>
     </>
-  )
+  );
 }

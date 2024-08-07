@@ -40,22 +40,27 @@ const images = [
     // Add other images manually
   ];
   
-  export const Carousel: FC<{ name: string }> = ({ name }) => {
-    const containerRef = useRef(null);
-    const [galleryContainer, setGalleryContainer] = useState(null);
+  interface CarouselProps {
+    name: string;
+  }
   
-    const onInit = useCallback((detail) => {
+  export const Carousel: FC<CarouselProps> = ({ name }) => {
+    const containerRef = useRef<HTMLDivElement | null>(null);
+    const [galleryContainer, setGalleryContainer] = useState<null | string>(null);
+  
+    const onInit = useCallback((detail: { instance: ILightGallery }) => {
       if (detail) {
         detail.instance.openGallery();
       }
     }, []);
-
+  
     useEffect(() => {
-        if (containerRef.current) {
-          setGalleryContainer('aaa');
-        }
-      }, []);
-      console.log(containerRef.current);
+      if (containerRef.current) {
+        setGalleryContainer('aaa');
+      }
+    }, []);
+  
+    console.log(containerRef.current);
   
     // Generate dynamicEl data from images array
     const dynamicEl = images.map((src, index) => {
@@ -79,7 +84,7 @@ const images = [
         ></div>
         <div>
           <LightGallery
-            container={containerRef.current}
+            container={containerRef.current as HTMLElement}
             onInit={onInit}
             plugins={[lgZoom, lgThumbnail]}
             closable={false}
