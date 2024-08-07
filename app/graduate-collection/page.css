@@ -1,4 +1,4 @@
-
+@import "../../../ashiraomashee/node_modules/locomotive-scroll/dist/locomotive-scroll.css";
 
 body{
   margin: 0px;
@@ -31,11 +31,11 @@ body{
 }
 
 .card::before{
-  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(21\).jpg);
+  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(21\).JPG);
 }
 
 .card:hover {
-  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(21\).jpg);
+  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(21\).JPG);
 }
 
 .card2 {
@@ -44,11 +44,11 @@ body{
 }
 
 .card2::before{
-  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(44\).jpg);
+  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(44\).JPG);
 }
 
 .card2:hover {
-  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(44\).jpg);
+  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(44\).JPG);
 }
 
 .card3 {
@@ -57,22 +57,31 @@ body{
 }
 
 .card3::before{
-  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(56\).jpg);
+  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(56\).JPG);
 }
 
 .card3:hover {
-  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(56\).jpg);
+  background-image: url(../../public/assets/FASHION_SHOOT_3/p\ \(56\).JPG);
 }
+
 
 @media (max-width: 768px) { 
-  .fontG {
-    font-size: 100px;
-  }
   .container1 {
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -20vh;
   }
+
+  .card3 {
+    margin-bottom: 30vh;
+  }
+
+  .fontG {
+    font-size: 40px;
+    letter-spacing: -0.02em; /* Reduced letter-spacing *//* Adjusted line-height for spacing */
+    color: #000;
+  }
+  
 }
-
-
 
 
